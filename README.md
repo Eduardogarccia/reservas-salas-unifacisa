@@ -167,33 +167,8 @@ A seguir está a visão geral dos principais endpoints implementados na API.
   "motivo": "Aula de lógica"
 }
 ```
-## Estrutura do Projeto
-
-A organização do projeto segue boas práticas de arquitetura em camadas, separando responsabilidades entre controladores, serviços, repositórios, modelos, DTOs e tratamento de exceções.
-
-A estrutura completa do projeto é apresentada a seguir:
 
 
-src/
-├─ main/
-│ ├─ java/
-│ │ └─ com/reservas/facisa/
-│ │ ├─ controller/ # Contém os endpoints REST (Salas, Usuários, Reservas)
-│ │ ├─ service/ # Regras de negócio e validações
-│ │ ├─ repository/ # Interfaces JPA para persistência
-│ │ ├─ model/ # Entidades JPA que representam as tabelas
-│ │ ├─ dto/ # Objetos de transferência (Request e Response)
-│ │ ├─ mapper/ # Conversão entre Entity e DTO
-│ │ ├─ exception/ # Exceptions customizadas e handler global (ControllerAdvice)
-│ │ └─ config/ # Configurações gerais (Swagger/OpenAPI, etc.)
-│ │
-│ └─ resources/
-│ ├─ application.properties # Configurações da aplicação (H2, JPA etc.)
-│ └─ static/ # (opcional)
-│
-└─ test/
-└─ java/
-└─ com/reservas/facisa/service/ # Testes unitários dos Services (JUnit + Mockito)
 
 
 

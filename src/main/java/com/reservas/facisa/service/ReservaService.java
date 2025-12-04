@@ -203,7 +203,7 @@ public class ReservaService {
         }
     }
 
-    private boolean estaDisponivel(Sala sala, LocalDate data, LocalTime horaInicio, LocalTime horaFim) {
+    public boolean estaDisponivel(Sala sala, LocalDate data, LocalTime horaInicio, LocalTime horaFim) {
 
         List<Reserva> conflitos = reservaRepository.findReservasConflitantes(
                 sala.getId(),
